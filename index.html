@@ -4,6 +4,83 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proyecto Integrador html, css</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="animaciones.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+        <ul class="nav__link">
+          <li><a class="nav__link nav__link--active" href="#">INICIO</a></li>
+          <li><a class="nav__link" href="#">PRODUCTOS</a></li>
+          <li><a class="nav__link" href="#">CONTACTO</a></li>
+        </ul>
+        <img src="./imagenes/logo/tienda__riojaA.png" alt="" />
+        <ul class="nav__register">
+          <li><a href="#">Iniciar Seción</a></li>
+          <li><a href="#">Registrate</a></li>
+          <label for="cart-toggle" class="cart-label">
+            <i class="fa-solid fa-cart-shopping cart-icon"></i>
+          </label>
+          <input type="checkbox" id="cart-toggle" />
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-------------------------HERO----------------------------->
+      <section class="hero">
+      
+       <img src="./imagenes/fondo-web/living.jpg" alt="imagen">
+      
+        <div class="container">
+        </div>
+        <div class="hero__title">
+          
+            <h1>TIENDA RIOJA</h1>
+          
+        </div>
+        <div class="hero-title2">
+          <ul>
+            <li>Diseño</li>
+            <li>Decoración</li>
+            <li>Estilo</li>
+          </ul>
+        </div>
+       <!---<div class="slider">
+          <img src="./imagenes/slider/1-slide-.webp" alt="">
+          <img src="./imagenes/slider/2-slide.webp" alt="">
+          <img src="./imagenes/slider/salon-t.jpg" alt="">
+          <img src="./imagenes/slider/tendencias-diseno-interiores.jpg" alt="">
+        </div>--->
+      </section>
+      <!-----------------------INFO------------------------------------------->
+      <section>
+        <div class="info">
+          <h3>DECORACIÓN DE INTERIORES - VAJILLA, MUEBLES Y TEXTILES</h3>
+          <p>Diseñamos lugares que se convierten en hogares, buscamos que te sientas reflejado con la decoración de tus espacios. Te asesoramos con el diseño y decoración de interiores. Podrás encontrar muebles, vajilla, textiles y deco para que la decoración de tus ambientes, sea soñada. </p>
+        </div>
+      </section>
+      <section>
+        <div class="cards">
+          
+            <div class="card1">
+              <h3>VAJILLA </h3>
+              <p>Vajillas,deco y accesorios de mesa: Bowls- Bandejas- tablas- Vajilla de diseño.</p>
+            </div>
+            <div class="card2">
+              <h3>MUEBLES</h3>
+              <P>Muebles a medida- Sillones-Muebles entrega inmediata.</P>
+            </div>
+            <div class="card3">
+              <h3>TEXTILES</h3>
+              <P>Mante- Eedredones y Fundas- Cortina a medida- Pillows- Manteles y Servilletas- Almohadones.</P>
+            </div>
+          </div>
+      </section>
+    </main>
+      </body>
 </html>
