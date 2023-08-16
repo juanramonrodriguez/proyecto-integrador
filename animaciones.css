@@ -108,26 +108,26 @@ ul li:hover {
   }
   45%,
   60% {
-    transform: translateY(-120%);
-    -webkit-transform: translateY(-120%);
-    -moz-transform: translateY(-120%);
-    -ms-transform: translateY(-120%);
-    -o-transform: translateY(-120%);
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
   }
   75%,
   90% {
-    transform: translateY(-220%);
-    -webkit-transform: translateY(-220%);
-    -moz-transform: translateY(-220%);
-    -ms-transform: translateY(-220%);
-    -o-transform: translateY(-220%);
+    transform: translateY(-200%);
+    -webkit-transform: translateY(-200%);
+    -moz-transform: translateY(-200%);
+    -ms-transform: translateY(-200%);
+    -o-transform: translateY(-200%);
   }
   100% {
-    transform: translateY(-290%);
-    -webkit-transform: translateY(-290%);
-    -moz-transform: translateY(-290%);
-    -ms-transform: translateY(-290%);
-    -o-transform: translateY(-290%);
+    transform: translateY(-300%);
+    -webkit-transform: translateY(-300%);
+    -moz-transform: translateY(-300%);
+    -ms-transform: translateY(-300%);
+    -o-transform: translateY(-300%);
     animation-delay: 5s;
   }
 }
