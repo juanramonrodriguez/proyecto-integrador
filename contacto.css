@@ -1,8 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  list-style: none;
   text-decoration: none;
+  list-style: none;
 }
 
 body {
@@ -57,11 +57,11 @@ header {
   height: 40px;
   font-size: 2rem;
   cursor: pointer;
-  color: black;
 }
 #cart-toggle {
   display: none;
 }
+
 .container-login {
   width: 100%;
   height: 935px;
@@ -74,7 +74,7 @@ header {
   top: 50%;
   left: 50%;
   width: 400px;
-  height: 350px;
+  height: 400px;
   padding: 40px;
   transform: translate(-50%, -50%);
   background: rgba(24, 20, 20, 0.987);
@@ -109,9 +109,21 @@ header {
   pointer-events: none;
   transition: 0.5s;
 }
+.login-box .user-box textarea {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
 
 .login-box .user-box input:focus ~ label,
-.login-box .user-box input:valid ~ label {
+.login-box .user-box input:valid ~ label,
+.login-box .user-box textarea:focus ~ label {
   top: -20px;
   left: 0;
   color: #bdb8b8;
@@ -120,8 +132,9 @@ header {
 
 .login-box form a {
   position: relative;
-  display: inline-block;
-  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
   color: #ffffff;
   font-size: 16px;
   text-decoration: none;

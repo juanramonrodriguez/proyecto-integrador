@@ -6,77 +6,142 @@
     <title>Proyecto Integrador html, css</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="animaciones.css">
+    <link rel="stylesheet" href="meadiaqueri.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
   </head>
   <body>
-    <header class="header">
+    <header class="header"> 
+      
         <ul class="nav__link">
-          <li><a class="nav__link nav__link--active" href="#">INICIO</a></li>
-          <li><a class="nav__link" href="#product">PRODUCTOS</a></li>
-          <li><a class="nav__link" href="#">CONTACTO</a></li>
+          <li><a class="nav__link" href="#">Inicio</a></li>
+          <li><a class="nav__link" href="#product">Productos</a></li>
+          <li><a class="nav__link" href="contacto.html">Contacto</a></li>
         </ul>
         <img src="./imagenes/logo/tienda__riojaA.png" alt="" />
         <ul class="nav__register">
           <li><a href="inicio-sesion.html">Iniciar Seción</a></li>
           <li><a href="registro.html">Registrate</a></li>
+        </ul>
           <label for="cart-toggle" class="cart-label">
             <i class="fa-solid fa-cart-shopping cart-icon"></i>
           </label>
           <input type="checkbox" id="cart-toggle" />
-        </ul>
+          <div class="cart">
+            <h2>Tu Pedido</h2>
+            <div class="cart-item">
+              <img src="./imagenes/categoria/Decoracion/pic071341-bddf5c8a0bf45c7e8116644664359375-320-0.webp" alt="Circulo infinito">
+              <div class="item-info">
+                <h3 class="item-title">Circulo Infinito</h3>
+                <span class="item-price"> $ 13.600</span>
+              <div class="quantity-handler">
+                  <span class="quantity-dow">-</span>
+                  <span class="item-quantity">1</span>
+                  <span class="quantity-up">+</span>
+                </div>
+              </div>
+            </div>
+            <div class="cart-item">
+              <img src="./imagenes/categoria/Decoracion/pic071341-bddf5c8a0bf45c7e8116644664359375-320-0.webp" alt="Circulo infinito">
+              <div class="item-info">
+                <h3 class="item-title">Circulo Infinito</h3>
+                <span class="item-price"> $ 13.600</span>
+                <div class="quantity-handler">
+                  <span class="quantity-dow">-</span>
+                  <span class="item-quantity">1</span>
+                  <span class="quantity-up">+</span>
+                </div>
+              </div>
+            </div>
+            <div class="cart-item">
+              <img src="./imagenes/categoria/Decoracion/pic071341-bddf5c8a0bf45c7e8116644664359375-320-0.webp" alt="Circulo infinito">
+              <div class="item-info">
+                <h3 class="item-title">Circulo Infinito</h3>
+                <span class="item-price"> $ 13.600</span>
+                <div class="quantity-handler">
+                  <span class="quantity-dow">-</span>
+                  <span class="item-quantity">1</span>
+                  <span class="quantity-up">+</span>
+                </div>
+              </div>
+            </div>
+            <div class="cart-item">
+              <img src="./imagenes/categoria/Decoracion/pic071341-bddf5c8a0bf45c7e8116644664359375-320-0.webp" alt="Circulo infinito">
+              <div class="item-info">
+                <h3 class="item-title">Circulo Infinito</h3>
+                <span class="item-price"> $ 13.600</span>
+                <div class="quantity-handler">
+                  <span class="quantity-dow">-</span>
+                  <span class="item-quantity">1</span>
+                  <span class="quantity-up">+</span>
+                </div>
+              </div>
+            </div>
+             <div class="cart-item">
+              <img src="./imagenes/categoria/Decoracion/pic071341-bddf5c8a0bf45c7e8116644664359375-320-0.webp" alt="Circulo infinito">
+              <div class="item-info">
+                <h3 class="item-title">Circulo Infinito</h3>
+                <span class="item-price"> $ 13.600</span>
+              <div class="quantity-handler">
+                  <span class="quantity-dow">-</span>
+                  <span class="item-quantity">1</span>
+                  <span class="quantity-up">+</span>
+                </div>
+              </div>
+            </div>        
+            <span class="divisor"></span>
+            <div class="cart-total">
+              <p>Total</p>
+              <span> $ 150.000</span>
+            </div>
+            <button class="btn-comprar">Comprar</button>
+          </div>
       </nav>
+   
     </header>
 
     <main>
       <!-------------------------HERO----------------------------->
       <section class="hero"> 
-      <img src="./imagenes/fondo-web/living.jpg" alt="imagen">
-      <div class="card-present">
-        <h2>Brindamos un servicio de asesoramiento personalizado, de manera virtual o presencial.
-          Diseñamos tus espacios para que sean vividos y disfrutados
-        </h2>
-      </div>
-        <div class="container">
-        </div>
-        <div class="hero__title">
+        <div class="container"></div>
+        <div class="titulo">
+          <div class="hero__title">
             <h1>TIENDA RIOJA</h1>
+          </div>
+          <div class="hero-title2">
+            <ul>
+              <li>Diseño</li>
+              <li>Decoración</li>
+              <li>Estilo</li>
+            </ul>
+          </div>
         </div>
-        <div class="hero-title2">
-          <ul>
-            <li>Diseño</li>
-            <li>Decoración</li>
-            <li>Estilo</li>
-          </ul>
-        </div>
-       <!---<div class="slider">
-          <img src="./imagenes/slider/1-slide-.webp" alt="">
-          <img src="./imagenes/slider/2-slide.webp" alt="">
-          <img src="./imagenes/slider/salon-t.jpg" alt="">
-          <img src="./imagenes/slider/tendencias-diseno-interiores.jpg" alt="">
-        </div>--->
+          <img src="./imagenes/fondo-web/livingestar_mesasliving.webp" alt="imagen">
+      
       </section>
       <!-----------------------INFO------------------------------------------->
       <section>
         <div class="info">
-          <h3>DECORACIÓN DE INTERIORES - VAJILLA, MUEBLES Y TEXTILES</h3>
-          <p>Diseñamos lugares que se convierten en hogares, buscamos que te sientas reflejado con la decoración de tus espacios. Te asesoramos con el diseño y decoración de interiores. Podrás encontrar muebles, vajilla, textiles y deco para que la decoración de tus ambientes, sea soñada. </p>
+          <h3>Diseñamos lugares que se convierten en hogares, buscamos que te sientas reflejado con la decoración de tus espacios. Te asesoramos con el diseño y decoración de interiores. Podrás encontrar muebles, vajilla, textiles y deco para que la decoración de tus ambientes, sea soñada.</h3>
         </div>
       </section>
       <section>
         <div class="cards">
           
-            <div class="card1">
+           <div class="card1">
+              <img src="./imagenes/cards/imagen1.jpg" alt="">
               <h3>VAJILLA </h3>
-              <p>Vajillas,deco y accesorios de mesa: Bowls- Bandejas- tablas- Vajilla de diseño.</p>
+              <p>Vajillas, deco y accesorios de mesa: Bowls- Bandejas- tablas- Vajilla de diseño.</p>
             </div>
             <div class="card2">
+              <img src="./imagenes/cards/imagen2.jpg" alt="">
               <h3>MUEBLES</h3>
               <P>Muebles a medida- Sillones-Muebles entrega inmediata.</P>
             </div>
             <div class="card3">
+              <img src="./imagenes/cards/imagen3.png" alt="">
               <h3>TEXTILES</h3>
               <P>Mante- Eedredones y Fundas- Cortina a medida- Pillows- Manteles y Servilletas- Almohadones.</P>
             </div>
@@ -85,7 +150,11 @@
       <!-----------------------PRODUCTOS----------------------------------------->
       
         <!--------------------CATEGORIA DECORACION----------------------------------------->
+       
+
+    
         <section>
+      
           <div class="decoration" id="product">
             <p>Decoracion</p>
           </div>
@@ -134,7 +203,7 @@
               <div class="price">
                 <p><strong>$ 12.100</strong></p>
               </div>
-              <div class="cuotas">++
+              <div class="cuotas">
                 <p><strong>6</strong> cuotas sin interes de <strong>2016,67</strong></p>
               </div>
               <div class="agregar">
@@ -313,6 +382,33 @@
             </div>
           </div>
           </section>
+          <!--------------------------------footer-------------------------------------------------->
+          <footer>
+            <div class="footer">
+              <div class="space1">
+                <h3>Casa Rioja</h3>
+                <p><strong>Horarios de atención:</strong>Lunes a Sabados de 10 a 19 Hs.</p>
+                <p><strong>Telefono:</strong>353-4819444</p>
+                <p><strong>Dirección</strong>Rioja 185 Villa Maria- Cba.</p>
+                <p><strong>info@tiendarioja.com</strong></p>
+
+              </div>
+              <div class="space2">
+                <h3>MEDIOS DE PAGO</h3>
+              <img src="./imagenes/logo/forma-pago-dyr.jpg" alt="Medios de Pago">
+
+              </div>
+              <div class="space3">
+                <h3>REDES SOCIALES</h3>
+                <div class="redes">
+                  <i class="fa-brands fa-facebook fa-2xl" style="color:#404142;"></i>
+                  <i class="fa-brands fa-whatsapp fa-2xl" style="color:#404142;"></i>
+                  <i class="fa-brands fa-instagram fa-2xl" style="color:#404142;"></i>
+                  <i class="fa-brands fa-telegram fa-2xl" style="color:#404142;"></i>
+                </div>
+              </div>
+            </div>
+          </footer>
         </main>
       </body>
       </html>
