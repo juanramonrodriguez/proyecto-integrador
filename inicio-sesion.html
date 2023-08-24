@@ -5,28 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inicio de secion</title>
     <link rel="stylesheet" href="inicio-sesion.css" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="meadiaqueri.css">
-    
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueri.css" />
   </head>
   <body>
     <header class="header">
-        <ul class="nav__link">
-          <li><a class="nav__link" href="index.html">Inicio</a></li>
+      <nav class="navbar">
+        <label for="toggle-menu"><i class="fa-solid fa-bars"></i></label>
+        <input type="checkbox" id="toggle-menu" />
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#">Inicio</a></li>
           <li><a class="nav__link" href="#product">Productos</a></li>
           <li><a class="nav__link" href="contacto.html">Contacto</a></li>
-        </ul>
-        <img src="./imagenes/logo/tienda__riojaA.png" alt="" />
-        <ul class="nav__register">
-          <li><a href="inicio-sesion.html">Iniciar Seción</a></li>
-          <li><a href="registro.html">Registrate</a></li>
-          <label for="cart-toggle" class="cart-label">
-            <i class="fa-solid fa-cart-shopping cart-icon"></i>
-          </label>
-          <input type="checkbox" id="cart-toggle" />
+
+          <!---<img src="./imagenes/logo/tienda__riojaA.png" alt="" />--->
+
+          <li>
+            <a class="nav__link" href="inicio-sesion.html">Iniciar Seción</a>
+          </li>
+          <li><a class="nav__link" href="registro.html">Registrate</a></li>
         </ul>
       </nav>
     </header>
+
     <section>
       <div class="container-login">
         <div class="login-box">

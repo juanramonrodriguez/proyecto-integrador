@@ -14,10 +14,6 @@
   list-style: none;
 }
 
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 65px;
-}
 header {
   display: flex;
   width: 100%;
@@ -36,15 +32,17 @@ header {
   height: 76px;
 }
 
-.nav__link {
+.nav__list {
   display: flex;
   align-items: center;
-  gap: 80px;
+  gap: 85px;
+}
+.nav__link {
   color: white;
   font-size: 20px;
 }
 
-.nav__register {
+/*.nav__register {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -53,7 +51,7 @@ header {
 .nav__register li a {
   color: white;
   font-size: 20px;
-}
+}*/
 
 .cart-icon {
   display: flex;
@@ -66,6 +64,18 @@ header {
 #cart-toggle {
   display: none;
 }
+
+.navbar {
+  display: flex;
+  font-size: 36px;
+  color: white;
+}
+.navbar i {
+  display: none;
+}
+#toggle-menu {
+  display: none;
+}
 /*---------------------Carrito------------------------*/
 .cart {
   position: absolute;
@@ -75,11 +85,17 @@ header {
   padding: 50px 30px;
   border: 1px solid white;
   top: 75px;
+  right: 40px;
   display: flex;
   flex-direction: column;
   gap: 30px;
   height: calc(100vh - 75px);
   overflow-y: scroll;
+  display: none;
+  animation: carrito 0.8s ease-in-out;
+  -webkit-animation: carrito 0.8s ease-in-out;
+}
+.cart::-webkit-scrollbar {
   display: none;
 }
 .cart h2 {
@@ -155,11 +171,28 @@ header {
 }
 #cart-toggle:checked + .cart {
   display: flex;
+  transform: translate(0%);
+  -webkit-transform: translate(0%);
+  -moz-transform: translate(0%);
+  -ms-transform: translate(0%);
+  -o-transform: translate(0%);
 }
 .btn-comprar {
-  padding-bottom: 25px;
+  padding-bottom: 10px;
   padding-top: 10px;
   width: 320px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background: #201c19;
+}
+.btn-comprar p {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  color: white;
 }
 
 /*----------------------------------------------HERO--------------------------                 */
@@ -239,13 +272,14 @@ header {
 /*-----------------------------INFO--------------------*/
 .info {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  padding: 100px 20px;
-  /*padding-bottom: 100px;
-  padding-top: 100px;*/
+  margin: 100px 200px;
+  background: #c5653f56;
+  padding: 50px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 
 .info h3 {
@@ -255,6 +289,7 @@ header {
 
 .info h3::first-letter {
   text-transform: uppercase;
+  text-align: center;
 }
 /*--------------------------------------CARDS-------------------------------*/
 .cards {

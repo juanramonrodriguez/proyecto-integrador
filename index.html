@@ -2,108 +2,132 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
     <title>Proyecto Integrador html, css</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="animaciones.css">
-    <link rel="stylesheet" href="meadiaqueri.css">
+    <link rel="stylesheet" href="animaciones.css" />
+    <link rel="stylesheet" href="mediaqueri.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
   </head>
   <body>
-    <header class="header"> 
-        <ul class="nav__link">
+    <header class="header">
+      <nav class="navbar">
+        <label for="toggle-menu"><i class="fa-solid fa-bars"></i></label>
+        <input type="checkbox" id="toggle-menu" />
+        <ul class="nav__list">
           <li><a class="nav__link" href="#">Inicio</a></li>
           <li><a class="nav__link" href="#product">Productos</a></li>
           <li><a class="nav__link" href="contacto.html">Contacto</a></li>
-        </ul>
-        <img src="./imagenes/logo/tienda__riojaA.png" alt="" />
-        <ul class="nav__register">
-          <li><a href="inicio-sesion.html">Iniciar Seción</a></li>
-          <li><a href="registro.html">Registrate</a></li>
-        </ul>
-          <label for="cart-toggle" class="cart-label">
-            <i class="fa-solid fa-cart-shopping cart-icon"></i>
-          </label>
-          <input type="checkbox" id="cart-toggle" />
-          <div class="cart">
-            <h2>Tu Pedido</h2>
-            <div class="cart-item">
-              <img src="./imagenes/categoria/Decoracion/pic071341-bddf5c8a0bf45c7e8116644664359375-320-0.webp" alt="Circulo infinito">
-              <div class="item-info">
-                <h3 class="item-title">Circulo Infinito</h3>
-                <span class="item-price"> $ 13.600</span>
-              <div class="quantity-handler">
-                  <span class="quantity-dow">-</span>
-                  <span class="item-quantity">1</span>
-                  <span class="quantity-up">+</span>
-                </div>
-              </div>
-            </div>
-            <div class="cart-item">
-              <img src="./imagenes/categoria/Decoracion/pic071341-bddf5c8a0bf45c7e8116644664359375-320-0.webp" alt="Circulo infinito">
-              <div class="item-info">
-                <h3 class="item-title">Circulo Infinito</h3>
-                <span class="item-price"> $ 13.600</span>
-                <div class="quantity-handler">
-                  <span class="quantity-dow">-</span>
-                  <span class="item-quantity">1</span>
-                  <span class="quantity-up">+</span>
-                </div>
-              </div>
-            </div>
-            <div class="cart-item">
-              <img src="./imagenes/categoria/Decoracion/pic071341-bddf5c8a0bf45c7e8116644664359375-320-0.webp" alt="Circulo infinito">
-              <div class="item-info">
-                <h3 class="item-title">Circulo Infinito</h3>
-                <span class="item-price"> $ 13.600</span>
-                <div class="quantity-handler">
-                  <span class="quantity-dow">-</span>
-                  <span class="item-quantity">1</span>
-                  <span class="quantity-up">+</span>
-                </div>
-              </div>
-            </div>
-            <div class="cart-item">
-              <img src="./imagenes/categoria/Decoracion/pic071341-bddf5c8a0bf45c7e8116644664359375-320-0.webp" alt="Circulo infinito">
-              <div class="item-info">
-                <h3 class="item-title">Circulo Infinito</h3>
-                <span class="item-price"> $ 13.600</span>
-                <div class="quantity-handler">
-                  <span class="quantity-dow">-</span>
-                  <span class="item-quantity">1</span>
-                  <span class="quantity-up">+</span>
-                </div>
-              </div>
-            </div>
-             <div class="cart-item">
-              <img src="./imagenes/categoria/Decoracion/pic071341-bddf5c8a0bf45c7e8116644664359375-320-0.webp" alt="Circulo infinito">
-              <div class="item-info">
-                <h3 class="item-title">Circulo Infinito</h3>
-                <span class="item-price"> $ 13.600</span>
-              <div class="quantity-handler">
-                  <span class="quantity-dow">-</span>
-                  <span class="item-quantity">1</span>
-                  <span class="quantity-up">+</span>
-                </div>
-              </div>
-            </div>        
-            <span class="divisor"></span>
-            <div class="cart-total">
-              <p>Total</p>
-              <span> $ 150.000</span>
-            </div>
-            <button class="btn-comprar">Comprar</button>
-          </div>
-      </nav>
-   
-    </header>
 
+          <!---<img src="./imagenes/logo/tienda__riojaA.png" alt="" />--->
+
+          <li>
+            <a class="nav__link" href="inicio-sesion.html">Iniciar Seción</a>
+          </li>
+          <li><a class="nav__link" href="registro.html">Registrate</a></li>
+        </ul>
+      </nav>
+      <label for="cart-toggle" class="cart-label">
+        <i class="fa-solid fa-cart-shopping cart-icon"></i>
+      </label>
+      <input type="checkbox" id="cart-toggle" />
+      <div class="cart">
+        <h2>Tu Pedido</h2>
+        <div class="cart-item">
+          <img
+            src="./imagenes/categoria/Decoracion/pic071341-bddf5c8a0bf45c7e8116644664359375-320-0.webp"
+            alt="Circulo infinito"
+          />
+          <div class="item-info">
+            <h3 class="item-title">Circulo Infinito</h3>
+            <span class="item-price"> $ 13.600</span>
+            <div class="quantity-handler">
+              <span class="quantity-dow">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-up">+</span>
+            </div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <img
+            src="./imagenes/categoria/Decoracion/pic071341-bddf5c8a0bf45c7e8116644664359375-320-0.webp"
+            alt="Circulo infinito"
+          />
+          <div class="item-info">
+            <h3 class="item-title">Circulo Infinito</h3>
+            <span class="item-price"> $ 13.600</span>
+            <div class="quantity-handler">
+              <span class="quantity-dow">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-up">+</span>
+            </div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <img
+            src="./imagenes/categoria/Decoracion/pic071341-bddf5c8a0bf45c7e8116644664359375-320-0.webp"
+            alt="Circulo infinito"
+          />
+          <div class="item-info">
+            <h3 class="item-title">Circulo Infinito</h3>
+            <span class="item-price"> $ 13.600</span>
+            <div class="quantity-handler">
+              <span class="quantity-dow">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-up">+</span>
+            </div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <img
+            src="./imagenes/categoria/Decoracion/pic071341-bddf5c8a0bf45c7e8116644664359375-320-0.webp"
+            alt="Circulo infinito"
+          />
+          <div class="item-info">
+            <h3 class="item-title">Circulo Infinito</h3>
+            <span class="item-price"> $ 13.600</span>
+            <div class="quantity-handler">
+              <span class="quantity-dow">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-up">+</span>
+            </div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <img
+            src="./imagenes/categoria/Decoracion/pic071341-bddf5c8a0bf45c7e8116644664359375-320-0.webp"
+            alt="Circulo infinito"
+          />
+          <div class="item-info">
+            <h3 class="item-title">Circulo Infinito</h3>
+            <span class="item-price"> $ 13.600</span>
+            <div class="quantity-handler">
+              <span class="quantity-dow">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-up">+</span>
+            </div>
+          </div>
+        </div>
+        <span class="divisor"></span>
+        <div class="cart-total">
+          <p>Total</p>
+          <span> $ 150.000</span>
+        </div>
+        <button class="btn-comprar">
+          <p>Comprar</p>
+        </button>
+      </div>
+    </header>
     <main>
       <!-------------------------HERO----------------------------->
-      <section class="hero"> 
+      <section class="hero">
         <div class="container"></div>
         <div class="titulo">
           <div class="hero__title">
@@ -117,298 +141,391 @@
             </ul>
           </div>
         </div>
-          <img src="./imagenes/fondo-web/livingestar_mesasliving.webp" alt="imagen">
-      
+        <img
+          src="./imagenes/fondo-web/livingestar_mesasliving.webp"
+          alt="imagen"
+        />
       </section>
       <!-----------------------INFO------------------------------------------->
       <section>
         <div class="info">
-          <h3>Diseñamos lugares que se convierten en hogares, buscamos que te sientas reflejado con la decoración de tus espacios. Te asesoramos con el diseño y decoración de interiores. Podrás encontrar muebles, vajilla, textiles y deco para que la decoración de tus ambientes, sea soñada.</h3>
+          <h3>
+            Diseñamos lugares que se convierten en hogares, buscamos que te
+            sientas reflejado con la decoración de tus espacios. Te asesoramos
+            con el diseño y decoración de interiores. Podrás encontrar muebles,
+            vajilla, textiles y deco para que la decoración de tus ambientes,
+            sea soñada.
+          </h3>
         </div>
       </section>
       <section>
         <div class="cards">
-          
-           <div class="card1">
-              <img src="./imagenes/cards/imagen1.jpg" alt="">
-              <h3>VAJILLA </h3>
-              <p>Vajillas, deco y accesorios de mesa: Bowls- Bandejas- tablas- Vajilla de diseño.</p>
-            </div>
-            <div class="card2">
-              <img src="./imagenes/cards/imagen2.jpg" alt="">
-              <h3>MUEBLES</h3>
-              <P>Muebles a medida- Sillones-Muebles entrega inmediata.</P>
-            </div>
-            <div class="card3">
-              <img src="./imagenes/cards/imagen3.png" alt="">
-              <h3>TEXTILES</h3>
-              <P>Mante- Eedredones y Fundas- Cortina a medida- Pillows- Manteles y Servilletas- Almohadones.</P>
-            </div>
+          <div class="card1">
+            <img src="./imagenes/cards/imagen1.jpg" alt="" />
+            <h3>VAJILLA</h3>
+            <p>
+              Vajillas, deco y accesorios de mesa: Bowls- Bandejas- tablas-
+              Vajilla de diseño.
+            </p>
           </div>
+          <div class="card2">
+            <img src="./imagenes/cards/imagen2.jpg" alt="" />
+            <h3>MUEBLES</h3>
+            <p>Muebles a medida- Sillones-Muebles entrega inmediata.</p>
+          </div>
+          <div class="card3">
+            <img src="./imagenes/cards/imagen3.png" alt="" />
+            <h3>TEXTILES</h3>
+            <p>
+              Mante- Eedredones y Fundas- Cortina a medida- Pillows- Manteles y
+              Servilletas- Almohadones.
+            </p>
+          </div>
+        </div>
       </section>
       <!-----------------------PRODUCTOS----------------------------------------->
-      
-        <!--------------------CATEGORIA DECORACION----------------------------------------->
-       
 
-    
-        <section>
-      
-          <div class="decoration" id="product">
-            <p>Decoracion</p>
-          </div>
-          <div class="container-decoration">
-            <div class="container-card">
-              <div class="imagen">
-                <img src="./imagenes/categoria/Decoracion/pic071341-bddf5c8a0bf45c7e8116644664359375-320-0.webp" alt="circulo infinito">
-              </div>
-              <div class="description">
-                <p>CIRCULO INFINITO</p>
-              </div>
-              <div class="price">
-                <p><strong>$ 13.600</strong></p>
-              </div>
-              <div class="cuotas">
-                <p><strong>6</strong> cuotas sin interes de <strong>2266,67</strong></p>
-              </div>
-              <div class="agregar">
-                <a href="#">AGREGAR AL CARRITO</a>
-              </div>
-              </div>
-              <div class="container-card">
-              <div class="imagen">
-                <img src="./imagenes/categoria/Decoracion/canastos-calixta.webp" alt="circulo infinito">
-              </div>
-              <div class="description">
-                <p>CANASTOS CALIXTA</p>
-              </div>
-              <div class="price">
-                <p><strong>$ 7.500</strong></p>
-              </div>
-              <div class="cuotas">
-                <p><strong>6</strong> cuotas sin interes de <strong>1250,00</strong></p>
-              </div>
-              <div class="agregar">
-                <a href="">AGREGAR AL CARRITO</a>
-              </div>
-              </div>
-              <div class="container-card">
-              <div class="imagen">
-                <img src="./imagenes/categoria/Decoracion/vasija-roma-gris.webp" alt="circulo infinito">
-              </div>
-              <div class="description">
-                <p>VASIJA ROMA-GRIS</p>
-              </div>
-              <div class="price">
-                <p><strong>$ 12.100</strong></p>
-              </div>
-              <div class="cuotas">
-                <p><strong>6</strong> cuotas sin interes de <strong>2016,67</strong></p>
-              </div>
-              <div class="agregar">
-                <a href="">AGREGAR AL CARRITO</a>
-              </div>
-              </div>
-              <div class="container-card">
-              <div class="imagen">
-                <img src="./imagenes/categoria/Decoracion/florero-sur-humo.jpg" alt="circulo infinito">
-              </div>
-              <div class="description">
-                <p>FLORERO SUR HUMO</p>
-              </div>
-              <div class="price">
-                <p><strong>$ 17.100</strong></p>
-              </div>
-              <div class="cuotas">
-                <p><strong>6</strong> cuotas sin interes de <strong>2850,00</strong></p>
-              </div>
-              <div class="agregar">
-                <a href="">AGREGAR AL CARRITO</a>
-              </div>
-              </div>
-              </div> 
-          </section>
-          <section>
-            <!--------------------categoria iluminacion---------------------------------------------->
-            <div class="iluminacion">
-              <p>Iluminación</p>
-            </div>
-            <div class="container-iluminacion">
-              <div class="container-card">
-              <div class="imagen">
-                <img src="./imagenes/categoria/Iluminacion/lampara-pez-globo.jpg" alt="La,para-pez-globo">
-              </div>
-              <div class="description">
-                <p>LAMPARA PEZ GLOBO</p>
-              </div>
-              <div class="price">
-                <p><strong>$ 107.000</strong></p>
-              </div>
-              <div class="cuotas">
-                <p><strong>3</strong> cuotas sin interes de <strong>35.666,67</strong></p>
-              </div>
-              <div class="agregar">
-                <a href="#">AGREGAR AL CARRITO</a>
-              </div>
-              </div>
-              <div class="container-card">
-              <div class="imagen">
-                <img src="./imagenes/categoria/Iluminacion/lampara-aline-chica.jpg" alt="Lampara-aline-chica">
-              </div>
-              <div class="description">
-                <p>LAMPARA ALINE CHICA</p>
-              </div>
-              <div class="price">
-                <p><strong>$ 47.200</strong></p>
-              </div>
-              <div class="cuotas">
-                <p><strong>3</strong> cuotas sin interes de <strong>15.733,33</strong></p>
-              </div>
-              <div class="agregar">
-                <a href="">AGREGAR AL CARRITO</a>
-              </div>
-              </div>
-              <div class="container-card">
-              <div class="imagen">
-                <img src="./imagenes/categoria/Iluminacion/lampara-jazz.jpg" alt="Lampara-jazz">
-              </div>
-              <div class="description">
-                <p>LAMPARA JAZZ</p>
-              </div>
-              <div class="price">
-                <p><strong>$ 249.000</strong></p>
-              </div>
-              <div class="cuotas">
-                <p><strong>3</strong> cuotas sin interes de <strong>83.000</strong></p>
-              </div>
-              <div class="agregar">
-                <a href="">AGREGAR AL CARRITO</a>
-              </div>
-              </div>
-              <div class="container-card">
-              <div class="imagen">
-                <img src="./imagenes/categoria/Iluminacion/lampara-tesla.jpg" alt="Lampara-tesla">
-              </div>
-              <div class="description">
-                <p>LAMPARA TESLA</p>
-              </div>
-              <div class="price">
-                <p><strong>$ 162.000</strong></p>
-              </div>
-              <div class="cuotas">
-                <p><strong>3</strong> cuotas sin interes de <strong>54.000</strong></p>
-              </div>
-              <div class="agregar">
-                <a href="">AGREGAR AL CARRITO</a>
-              </div>
-              </div>
-            </div>
-          </section>
-          <section>
-            <!------------------------categoria-muebles--------------------------------------------------------------->
-            <div class="muebles">
-              <p>Muebles</p>
-            </div>
-            <div class="container-muebles"> 
-            <div class="container-card">
-              <div class="imagen">
-                <img src="./imagenes/categoria/Muebles/mesa-ratona-oslo.jpg" alt="Mesa-Ratona-Oslo">
-              </div>
-              <div class="description">
-                <p>MESA RATONA OSLO</p>
-              </div>
-              <div class="price">
-                <p><strong>$ 529.500</strong></p>
-              </div>
-              <div class="cuotas">
-                <p><strong>3</strong> cuotas sin interes de <strong>176.000</strong></p>
-              </div>
-              <div class="agregar">
-                <a href="">AGREGAR AL CARRITO</a>
-              </div>
-              </div>
-              <div class="container-card">
+      <!--------------------CATEGORIA DECORACION----------------------------------------->
 
-                <div class="imagen">
-                  <img src="./imagenes/categoria/Muebles/mesa-alamo.jpg" alt="Mesa-alamo">
-                  </div>
-                  <div class="description">
-                    <p>MESA COMEDOR ALAMO</p>
-                  </div>
-                  <div class="price">
-                    <p><strong>$ 284.600</strong></p>
-              </div>
-              <div class="cuotas">
-                <p><strong>3</strong> cuotas sin interes de <strong>94.866,67</strong></p>
-              </div>
-              <div class="agregar">
-                <a href="">AGREGAR AL CARRITO</a>
-              </div>
-              </div>
-              <div class="container-card">
-              <div class="imagen">
-                <img src="./imagenes/categoria/Muebles/puff-lino.jpg" alt="Puff-lino">
-              </div>
-              <div class="description">
-                <p>PUFF LINO</p>
-              </div>
-              <div class="price">
-                <p><strong>$ 72.000</strong></p>
-              </div>
-              <div class="cuotas">
-                <p><strong>3</strong> cuotas sin interes de <strong>24.000</strong></p>
-              </div>
-              <div class="agregar">
-                <a href="">AGREGAR AL CARRITO</a>
-              </div>
-              </div>
-              <div class="container-card">
-              <div class="imagen">
-                <img src="./imagenes/categoria/Muebles/silla-rondo.jpg" alt="Silla-rondo">
-              </div>
-              <div class="description">
-                <p>LSILLA RONDO</p>
-              </div>
-              <div class="price">
-                <p><strong>$ 55.000</strong></p>
-              </div>
-              <div class="cuotas">
-                <p><strong>3</strong> cuotas sin interes de <strong>18.333,33</strong></p>
-              </div>
-              <div class="agregar">
-                <a href="">AGREGAR AL CARRITO</a>
-              </div>
+      <section>
+        <div class="decoration" id="product">
+          <p>Decoracion</p>
+        </div>
+        <div class="container-decoration">
+          <div class="container-card">
+            <div class="imagen">
+              <img
+                src="./imagenes/categoria/Decoracion/pic071341-bddf5c8a0bf45c7e8116644664359375-320-0.webp"
+                alt="circulo infinito"
+              />
+            </div>
+            <div class="description">
+              <p>CIRCULO INFINITO</p>
+            </div>
+            <div class="price">
+              <p><strong>$ 13.600</strong></p>
+            </div>
+            <div class="cuotas">
+              <p>
+                <strong>6</strong> cuotas sin interes de
+                <strong>2266,67</strong>
+              </p>
+            </div>
+            <div class="agregar">
+              <a href="#">AGREGAR AL CARRITO</a>
             </div>
           </div>
-          </section>
-          <!--------------------------------footer-------------------------------------------------->
-          <footer>
-            <div class="footer">
-              <div class="space1">
-                <h3>Casa Rioja</h3>
-                <p><strong>Horarios de atención:</strong>Lunes a Sabados de 10 a 19 Hs.</p>
-                <p><strong>Telefono:</strong>353-4819444</p>
-                <p><strong>Dirección</strong>Rioja 185 Villa Maria- Cba.</p>
-                <p><strong>info@tiendarioja.com</strong></p>
-
-              </div>
-              <div class="space2">
-                <h3>MEDIOS DE PAGO</h3>
-              <img src="./imagenes/logo/forma-pago-dyr.jpg" alt="Medios de Pago">
-
-              </div>
-              <div class="space3">
-                <h3>REDES SOCIALES</h3>
-                <div class="redes">
-                  <i class="fa-brands fa-facebook fa-2xl" style="color:#404142;"></i>
-                  <i class="fa-brands fa-whatsapp fa-2xl" style="color:#404142;"></i>
-                  <i class="fa-brands fa-instagram fa-2xl" style="color:#404142;"></i>
-                  <i class="fa-brands fa-telegram fa-2xl" style="color:#404142;"></i>
-                </div>
-              </div>
+          <div class="container-card">
+            <div class="imagen">
+              <img
+                src="./imagenes/categoria/Decoracion/canastos-calixta.webp"
+                alt="circulo infinito"
+              />
             </div>
-          </footer>
-        </main>
-      </body>
-      </html>
-    
+            <div class="description">
+              <p>CANASTOS CALIXTA</p>
+            </div>
+            <div class="price">
+              <p><strong>$ 7.500</strong></p>
+            </div>
+            <div class="cuotas">
+              <p>
+                <strong>6</strong> cuotas sin interes de
+                <strong>1250,00</strong>
+              </p>
+            </div>
+            <div class="agregar">
+              <a href="">AGREGAR AL CARRITO</a>
+            </div>
+          </div>
+          <div class="container-card">
+            <div class="imagen">
+              <img
+                src="./imagenes/categoria/Decoracion/vasija-roma-gris.webp"
+                alt="circulo infinito"
+              />
+            </div>
+            <div class="description">
+              <p>VASIJA ROMA-GRIS</p>
+            </div>
+            <div class="price">
+              <p><strong>$ 12.100</strong></p>
+            </div>
+            <div class="cuotas">
+              <p>
+                <strong>6</strong> cuotas sin interes de
+                <strong>2016,67</strong>
+              </p>
+            </div>
+            <div class="agregar">
+              <a href="">AGREGAR AL CARRITO</a>
+            </div>
+          </div>
+          <div class="container-card">
+            <div class="imagen">
+              <img
+                src="./imagenes/categoria/Decoracion/florero-sur-humo.jpg"
+                alt="circulo infinito"
+              />
+            </div>
+            <div class="description">
+              <p>FLORERO SUR HUMO</p>
+            </div>
+            <div class="price">
+              <p><strong>$ 17.100</strong></p>
+            </div>
+            <div class="cuotas">
+              <p>
+                <strong>6</strong> cuotas sin interes de
+                <strong>2850,00</strong>
+              </p>
+            </div>
+            <div class="agregar">
+              <a href="">AGREGAR AL CARRITO</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <!--------------------categoria iluminacion---------------------------------------------->
+        <div class="iluminacion">
+          <p>Iluminación</p>
+        </div>
+        <div class="container-iluminacion">
+          <div class="container-card">
+            <div class="imagen">
+              <img
+                src="./imagenes/categoria/Iluminacion/lampara-pez-globo.jpg"
+                alt="La,para-pez-globo"
+              />
+            </div>
+            <div class="description">
+              <p>LAMPARA PEZ GLOBO</p>
+            </div>
+            <div class="price">
+              <p><strong>$ 107.000</strong></p>
+            </div>
+            <div class="cuotas">
+              <p>
+                <strong>3</strong> cuotas sin interes de
+                <strong>35.666,67</strong>
+              </p>
+            </div>
+            <div class="agregar">
+              <a href="#">AGREGAR AL CARRITO</a>
+            </div>
+          </div>
+          <div class="container-card">
+            <div class="imagen">
+              <img
+                src="./imagenes/categoria/Iluminacion/lampara-aline-chica.jpg"
+                alt="Lampara-aline-chica"
+              />
+            </div>
+            <div class="description">
+              <p>LAMPARA ALINE CHICA</p>
+            </div>
+            <div class="price">
+              <p><strong>$ 47.200</strong></p>
+            </div>
+            <div class="cuotas">
+              <p>
+                <strong>3</strong> cuotas sin interes de
+                <strong>15.733,33</strong>
+              </p>
+            </div>
+            <div class="agregar">
+              <a href="">AGREGAR AL CARRITO</a>
+            </div>
+          </div>
+          <div class="container-card">
+            <div class="imagen">
+              <img
+                src="./imagenes/categoria/Iluminacion/lampara-jazz.jpg"
+                alt="Lampara-jazz"
+              />
+            </div>
+            <div class="description">
+              <p>LAMPARA JAZZ</p>
+            </div>
+            <div class="price">
+              <p><strong>$ 249.000</strong></p>
+            </div>
+            <div class="cuotas">
+              <p>
+                <strong>3</strong> cuotas sin interes de <strong>83.000</strong>
+              </p>
+            </div>
+            <div class="agregar">
+              <a href="">AGREGAR AL CARRITO</a>
+            </div>
+          </div>
+          <div class="container-card">
+            <div class="imagen">
+              <img
+                src="./imagenes/categoria/Iluminacion/lampara-tesla.jpg"
+                alt="Lampara-tesla"
+              />
+            </div>
+            <div class="description">
+              <p>LAMPARA TESLA</p>
+            </div>
+            <div class="price">
+              <p><strong>$ 162.000</strong></p>
+            </div>
+            <div class="cuotas">
+              <p>
+                <strong>3</strong> cuotas sin interes de <strong>54.000</strong>
+              </p>
+            </div>
+            <div class="agregar">
+              <a href="">AGREGAR AL CARRITO</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <!------------------------categoria-muebles--------------------------------------------------------------->
+        <div class="muebles">
+          <p>Muebles</p>
+        </div>
+        <div class="container-muebles">
+          <div class="container-card">
+            <div class="imagen">
+              <img
+                src="./imagenes/categoria/Muebles/mesa-ratona-oslo.jpg"
+                alt="Mesa-Ratona-Oslo"
+              />
+            </div>
+            <div class="description">
+              <p>MESA RATONA OSLO</p>
+            </div>
+            <div class="price">
+              <p><strong>$ 529.500</strong></p>
+            </div>
+            <div class="cuotas">
+              <p>
+                <strong>3</strong> cuotas sin interes de
+                <strong>176.000</strong>
+              </p>
+            </div>
+            <div class="agregar">
+              <a href="">AGREGAR AL CARRITO</a>
+            </div>
+          </div>
+          <div class="container-card">
+            <div class="imagen">
+              <img
+                src="./imagenes/categoria/Muebles/mesa-alamo.jpg"
+                alt="Mesa-alamo"
+              />
+            </div>
+            <div class="description">
+              <p>MESA COMEDOR ALAMO</p>
+            </div>
+            <div class="price">
+              <p><strong>$ 284.600</strong></p>
+            </div>
+            <div class="cuotas">
+              <p>
+                <strong>3</strong> cuotas sin interes de
+                <strong>94.866,67</strong>
+              </p>
+            </div>
+            <div class="agregar">
+              <a href="">AGREGAR AL CARRITO</a>
+            </div>
+          </div>
+          <div class="container-card">
+            <div class="imagen">
+              <img
+                src="./imagenes/categoria/Muebles/puff-lino.jpg"
+                alt="Puff-lino"
+              />
+            </div>
+            <div class="description">
+              <p>PUFF LINO</p>
+            </div>
+            <div class="price">
+              <p><strong>$ 72.000</strong></p>
+            </div>
+            <div class="cuotas">
+              <p>
+                <strong>3</strong> cuotas sin interes de <strong>24.000</strong>
+              </p>
+            </div>
+            <div class="agregar">
+              <a href="">AGREGAR AL CARRITO</a>
+            </div>
+          </div>
+          <div class="container-card">
+            <div class="imagen">
+              <img
+                src="./imagenes/categoria/Muebles/silla-rondo.jpg"
+                alt="Silla-rondo"
+              />
+            </div>
+            <div class="description">
+              <p>LSILLA RONDO</p>
+            </div>
+            <div class="price">
+              <p><strong>$ 55.000</strong></p>
+            </div>
+            <div class="cuotas">
+              <p>
+                <strong>3</strong> cuotas sin interes de
+                <strong>18.333,33</strong>
+              </p>
+            </div>
+            <div class="agregar">
+              <a href="">AGREGAR AL CARRITO</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--------------------------------footer-------------------------------------------------->
+      <footer>
+        <div class="footer">
+          <div class="space1">
+            <h3>Casa Rioja</h3>
+            <p>
+              <strong>Horarios de atención:</strong>Lunes a Sabados de 10 a 19
+              Hs.
+            </p>
+            <p><strong>Telefono:</strong>353-4819444</p>
+            <p><strong>Dirección</strong>Rioja 185 Villa Maria- Cba.</p>
+            <p><strong>info@tiendarioja.com</strong></p>
+          </div>
+          <div class="space2">
+            <h3>MEDIOS DE PAGO</h3>
+            <img
+              src="./imagenes/logo/forma-pago-dyr.jpg"
+              alt="Medios de Pago"
+            />
+          </div>
+          <div class="space3">
+            <h3>REDES SOCIALES</h3>
+            <div class="redes">
+              <i
+                class="fa-brands fa-facebook fa-2xl"
+                style="color: #404142"
+              ></i>
+              <i
+                class="fa-brands fa-whatsapp fa-2xl"
+                style="color: #404142"
+              ></i>
+              <i
+                class="fa-brands fa-instagram fa-2xl"
+                style="color: #404142"
+              ></i>
+              <i
+                class="fa-brands fa-telegram fa-2xl"
+                style="color: #404142"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
