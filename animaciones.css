@@ -66,11 +66,6 @@
   -ms-transform: scaleX(0);
   -o-transform: scaleX(0);
   transform-origin: bottom right;
-  transition: transform 0.15s ease;
-  -webkit-transition: transform 0.15s ease;
-  -moz-transition: transform 0.15s ease;
-  -ms-transition: transform 0.15s ease;
-  -o-transition: transform 0.15s ease;
 }
 .nav__register li a:hover::after {
   transform: scale(1);

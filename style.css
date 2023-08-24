@@ -13,6 +13,9 @@
   text-decoration: none;
   list-style: none;
 }
+body {
+  overflow-x: hidden;
+}
 
 header {
   display: flex;
@@ -23,7 +26,6 @@ header {
   gap: 80px;
   height: 80px;
   background-color: transparent;
-
   z-index: 3;
 }
 
@@ -41,17 +43,6 @@ header {
   color: white;
   font-size: 20px;
 }
-
-/*.nav__register {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  color: white;
-}
-.nav__register li a {
-  color: white;
-  font-size: 20px;
-}*/
 
 .cart-icon {
   display: flex;
@@ -76,14 +67,50 @@ header {
 #toggle-menu {
   display: none;
 }
+.bars-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+.bars-menu span {
+  height: 2px;
+  width: 30px;
+  background: white;
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -ms-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+}
+#toggle-menu:checked ~ .bars-menu span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+}
+#toggle-menu:checked ~ .bars-menu span:nth-child(2) {
+  opacity: 0;
+}
+#toggle-menu:checked ~ .bars-menu span:nth-child(3) {
+  position: absolute;
+  top: 0;
+  transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+}
 /*---------------------Carrito------------------------*/
 .cart {
   position: absolute;
   width: 400px;
   right: 300px;
-  background: transparent;
+  background: rgb(32, 30, 30);
   padding: 50px 30px;
-  border: 1px solid white;
   top: 75px;
   right: 40px;
   display: flex;
@@ -93,8 +120,8 @@ header {
   overflow-y: scroll;
   display: none;
   animation: carrito 0.8s ease-in-out;
-  -webkit-animation: carrito 0.8s ease-in-out;
 }
+
 .cart::-webkit-scrollbar {
   display: none;
 }
